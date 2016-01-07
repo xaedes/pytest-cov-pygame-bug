@@ -1,10 +1,17 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
+import coverage
+
+cov = coverage.Coverage()
+cov.start()
+
 from draw import draw
 
 import pygame
 import numpy as np
+
+
 
 def test_draw():
     screen = draw()
@@ -31,3 +38,5 @@ finally:
     # pprint.pprint(sys.path)
     # pprint.pprint(sys.modules)
 
+    cov.stop()
+    # cov.save()
