@@ -17,10 +17,15 @@ def test_draw():
         pygame.surfarray.pixels3d(reference)
         )
 
-    print "test ok"
+    # print "test ok"
     
 def main():
     test_draw()
 
-if __name__ == '__main__':
-    main()
+try:
+    if __name__ == '__main__':
+        main()
+finally:
+    import pprint, sys
+    pprint.pprint(sys.path)
+    pprint.pprint(sys.modules)
