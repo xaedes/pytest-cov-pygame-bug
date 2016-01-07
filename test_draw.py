@@ -16,3 +16,11 @@ def test_draw():
         pygame.surfarray.pixels3d(screen),
         pygame.surfarray.pixels3d(reference)
         )
+
+    print "test ok"
+    
+def main():
+    test_draw()
+
+if __name__ == '__main__':
+    main()

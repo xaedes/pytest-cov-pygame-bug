@@ -1,53 +1,27 @@
-xaedes@xaedes-vbox: ~/gits/pytestbug$ py.test .
-================================================================================================ test session starts ================================================================================================
-platform linux2 -- Python 2.7.11, pytest-2.8.5, py-1.4.31, pluggy-0.3.1
-rootdir: /home/xaedes/gits/pytestbug, inifile: 
-plugins: cov-2.2.0, mock-0.9.0
-collected 1 items 
+xaedes@xaedes-vbox: ~/gits/pytestbug$ ./test_draw.py
+test ok
 
-test_draw.py .
+xaedes@xaedes-vbox: ~/gits/pytestbug$ coverage run ./test_draw.py 
+Traceback (most recent call last):
+  File "./test_draw.py", line 26, in <module>
+    main()
+  File "./test_draw.py", line 23, in main
+    test_draw()
+  File "./test_draw.py", line 17, in test_draw
+    pygame.surfarray.pixels3d(reference)
+  File "/usr/local/lib/python2.7/dist-packages/numpy/testing/utils.py", line 497, in assert_almost_equal
+    return assert_array_almost_equal(actual, desired, decimal, err_msg)
+  File "/usr/local/lib/python2.7/dist-packages/numpy/testing/utils.py", line 892, in assert_array_almost_equal
+    precision=decimal)
+  File "/usr/local/lib/python2.7/dist-packages/numpy/testing/utils.py", line 713, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not almost equal to 7 decimals
 
-============================================================================================= 1 passed in 0.12 seconds ==============================================================================================
-xaedes@xaedes-vbox: ~/gits/pytestbug$ py.test . --cov=.
-================================================================================================ test session starts ================================================================================================
-platform linux2 -- Python 2.7.11, pytest-2.8.5, py-1.4.31, pluggy-0.3.1
-rootdir: /home/xaedes/gits/pytestbug, inifile: 
-plugins: cov-2.2.0, mock-0.9.0
-collected 1 items 
-
-test_draw.py F
-
-===================================================================================================== FAILURES ======================================================================================================
-_____________________________________________________________________________________________________ test_draw _____________________________________________________________________________________________________
-
-    def test_draw():
-        screen = draw()
-        reference = pygame.image.load("image.png")
-    
-        pygame.image.save(screen, "image_test.png")
-    
-        np.testing.assert_almost_equal(
-            pygame.surfarray.pixels3d(screen),
->           pygame.surfarray.pixels3d(reference)
-            )
-E       AssertionError: 
-E       Arrays are not almost equal to 7 decimals
-E       
-E       (mismatch 2.625%)
-E        x: array([[[255, 255, 255],
-E               [255, 255, 255],
-E               [255, 255, 255],...
-E        y: array([[[255, 255, 255],
-E               [255, 255, 255],
-E               [255, 255, 255],...
-
-test_draw.py:17: AssertionError
---------------------------------------------------------------------------------- coverage: platform linux2, python 2.7.11-final-0 ----------------------------------------------------------------------------------
-Name           Stmts   Miss  Cover
-----------------------------------
-draw.py           11      2    82%
-test_draw.py       8      0   100%
-----------------------------------
-TOTAL             19      2    89%
-============================================================================================= 1 failed in 0.19 seconds ==============================================================================================
-
+(mismatch 2.625%)
+ x: array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],...
+ y: array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],...
