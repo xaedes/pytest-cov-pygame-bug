@@ -1,7 +1,7 @@
 
-Testing this code with "py.test" will pass.
-Testing this code with "py.test --cov=." will NOT pass.
+Running the test code with "./test_draw.py" will pass.
+Running the test code with "coverage run ./test_draw.py" will NOT pass.
 
-The tested code draws an antialiased line using pygame.
+The code draws an antialiased line using pygame. This is tested against an reference image 'image.png'.
 
-It should look like 'image.png'. But using "--cov=." will result in 'image_test.png'
+It should look like 'image.png'. But using "coverage .." will result in 'image_test.png'
