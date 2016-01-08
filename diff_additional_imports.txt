@@ -1,0 +1,50 @@
+28c28
+<  '__main__': <module '__main__' from './test_draw.py'>,
+---
+>  '__main__': <module '__main__' from './test_additional_imports.py'>,
+125d124
+<  'coverage.threading': None,
+148,164c147,163
+<  'email.Charset': <email.LazyImporter object at 0x7f329ef5ad50>,
+<  'email.Encoders': <email.LazyImporter object at 0x7f329ef5ad90>,
+<  'email.Errors': <email.LazyImporter object at 0x7f329ef5add0>,
+<  'email.FeedParser': <email.LazyImporter object at 0x7f329ef5ae10>,
+<  'email.Generator': <email.LazyImporter object at 0x7f329ef5ae50>,
+<  'email.Header': <email.LazyImporter object at 0x7f329ef5ae90>,
+<  'email.Iterators': <email.LazyImporter object at 0x7f329ef5aed0>,
+<  'email.MIMEAudio': <email.LazyImporter object at 0x7f329eee7090>,
+<  'email.MIMEBase': <email.LazyImporter object at 0x7f329eee70d0>,
+<  'email.MIMEImage': <email.LazyImporter object at 0x7f329eee7110>,
+<  'email.MIMEMessage': <email.LazyImporter object at 0x7f329eee7150>,
+<  'email.MIMEMultipart': <email.LazyImporter object at 0x7f329eee7190>,
+<  'email.MIMENonMultipart': <email.LazyImporter object at 0x7f329eee7210>,
+<  'email.MIMEText': <email.LazyImporter object at 0x7f329eee72d0>,
+<  'email.Message': <email.LazyImporter object at 0x7f329ef5af10>,
+<  'email.Parser': <email.LazyImporter object at 0x7f329ef5af50>,
+<  'email.Utils': <email.LazyImporter object at 0x7f329ef5af90>,
+---
+>  'email.Charset': <email.LazyImporter object at 0x7f74ad16e410>,
+>  'email.Encoders': <email.LazyImporter object at 0x7f74ad16e450>,
+>  'email.Errors': <email.LazyImporter object at 0x7f74ad16e490>,
+>  'email.FeedParser': <email.LazyImporter object at 0x7f74ad16e4d0>,
+>  'email.Generator': <email.LazyImporter object at 0x7f74ad16e510>,
+>  'email.Header': <email.LazyImporter object at 0x7f74ad16e550>,
+>  'email.Iterators': <email.LazyImporter object at 0x7f74ad16e590>,
+>  'email.MIMEAudio': <email.LazyImporter object at 0x7f74ad16e710>,
+>  'email.MIMEBase': <email.LazyImporter object at 0x7f74ad16e750>,
+>  'email.MIMEImage': <email.LazyImporter object at 0x7f74ad16e790>,
+>  'email.MIMEMessage': <email.LazyImporter object at 0x7f74ad16e7d0>,
+>  'email.MIMEMultipart': <email.LazyImporter object at 0x7f74ad16e810>,
+>  'email.MIMENonMultipart': <email.LazyImporter object at 0x7f74ad16e890>,
+>  'email.MIMEText': <email.LazyImporter object at 0x7f74ad16e950>,
+>  'email.Message': <email.LazyImporter object at 0x7f74ad16e5d0>,
+>  'email.Parser': <email.LazyImporter object at 0x7f74ad16e610>,
+>  'email.Utils': <email.LazyImporter object at 0x7f74ad16e650>,
+167c166
+<  'email.base64MIME': <email.LazyImporter object at 0x7f329ef5afd0>,
+---
+>  'email.base64MIME': <email.LazyImporter object at 0x7f74ad16e690>,
+184c183
+<  'email.quopriMIME': <email.LazyImporter object at 0x7f329eee7050>,
+---
+>  'email.quopriMIME': <email.LazyImporter object at 0x7f74ad16e6d0>,
